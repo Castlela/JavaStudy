@@ -24,6 +24,25 @@ public class 分支结构_if_switch2 {
 		}else{
 			System.out.println(num+"是奇数");
 		}
+		
+//用if做三个数的升序排序,以下三个if都必须执行，所以不能用if else
+		int a=98,b=45,c=15;
+		if(a>b){
+			int t=a;
+				a=b;
+				b=t;
+		}
+		if(a>c){
+			int t=a;
+				a=c;
+				c=t;
+		}
+		if(b>c){
+			int t=b;
+				b=c;
+				c=t;
+		}
+		System.out.println("三个数的升序:"+a+" < "+b+" < "+c);
 
 //--------------------------------------------------------------------------------
 //分支结构if...else if...else
@@ -74,12 +93,12 @@ public class 分支结构_if_switch2 {
 			System.out.println("办理业务");
 			break;
 		case 3:
-			System.out.println("人工服务");
+		case 4:
+		case 5:
+			System.out.println("人工服务"); //选择 3、4、5 都会跳到人工服务。
 			break;
 		}
-		
-		
-		
+			
 	}
 	
 }
