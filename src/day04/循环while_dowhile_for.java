@@ -6,7 +6,7 @@ public class 循环while_dowhile_for {
 
 	public static void main(String[] args) {
 //----------------------------------------------------------------------------------------------
-//while 有可能一次都不执行 
+//while 有可能一次都不执行 ,有当...的时候，用while
 //输出10次-行动是成功的阶梯
 		int times=0;
 		while(times<10){
@@ -72,7 +72,7 @@ public class 循环while_dowhile_for {
 		}
 */
 //--------------------------------------------------------------------------------------------------------
-//do...while() 先执行再判断(至少要执行一次的循环，应该用do...while)
+//do...while() 先执行再判断(至少要执行一次的循环，应该用do...while) 有直到...的时候，用do...while
 		Scanner scan = new Scanner(System.in);
 		int num = (int)(Math.random()*1000+1);
 		//System.out.println(num);
@@ -96,7 +96,7 @@ public class 循环while_dowhile_for {
 		}
 
 //------------------------------------------------------------------------------------------------------
-//for循环	
+//for循环 有固定次数循环的时候，应用率最高
 		int sum = 0;
 		for(int n=1;n<=100;n++){
 			sum+=n;
